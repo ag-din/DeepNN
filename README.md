@@ -111,6 +111,13 @@ Archived for historical and reference purposes. Not maintained.
 
 ## References
 
+Ba, J. y Caruana, R. (2013). Do Deep Nets Really Need to be Deep?. Computing Research
+Repository, abs/1312.6184. Recuperado de http://arxiv.org/abs/1312.6184
+
+Lin, Z., Memisevic, R. y Konda, K.R. (2015). How far can we go without convolution:
+Improving fully-connected networks. Computing Research Repository, abs/1511.02580.
+Recuperado de http://arxiv.org/abs/1511.02580
+
 Srivastava, N., Hinton, G., Frizhevsky, A., Sutskever, I. y Salakhutdinov, R. (2014). 
 Dropout: A Simple Way to Prevent Neural Networks from Overfitting. Journal of Machine
 Learning Research, 15 (1), 1929-1958.
