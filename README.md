@@ -112,14 +112,24 @@ Archived for historical and reference purposes. Not maintained.
 ## References
 
 Ba, J. y Caruana, R. (2013). Do Deep Nets Really Need to be Deep?. Computing Research
-Repository, abs/1312.6184. Recuperado de http://arxiv.org/abs/1312.6184
+Repository, abs/1312.6184. http://arxiv.org/abs/1312.6184
 
 Lin, Z., Memisevic, R. y Konda, K.R. (2015). How far can we go without convolution:
 Improving fully-connected networks. Computing Research Repository, abs/1511.02580.
-Recuperado de http://arxiv.org/abs/1511.02580
+http://arxiv.org/abs/1511.02580
+
+Nielsen, M. A. (2015). Neural Networks and Deep Learning [online]. Retrieved from
+http://neuralnetworksanddeeplearning.com
 
 Srivastava, N., Hinton, G., Frizhevsky, A., Sutskever, I. y Salakhutdinov, R. (2014). 
 Dropout: A Simple Way to Prevent Neural Networks from Overfitting. Journal of Machine
 Learning Research, 15 (1), 1929-1958.
+
+Springenberg, J. T., Dosovitskiy, A., Brox, T. y Riedmiller, M. (2014). Striving for
+Simplicity: The All Convolutional Net. Computing Research Repository, abs/1412.6806.
+http://arxiv.org/abs/1412.6806
+
+Zeiler, M. D. y Fergus, R. (2013). Stochastic Pooling for Regularization of Deep Convo-
+lutional Neural Networks. Computing Research Repository, abs/1301.3557. https://arxiv.org/pdf/1301.3557.pdf
 
 
