@@ -19,7 +19,8 @@ networks achieve strong performance on AI tasks, but training them carries a
 high computational cost, and they are designed in many shapes and sizes
 depending on the application. This work studies that trade-off for two
 architectures widely used in Computer Vision: dense networks (FC) and
-convolutional networks (CNN).
+convolutional networks (CNN). The full thesis (in Spanish), available [here](https://bdigital.uncu.edu.ar/13989) 
+at the National University of Cuyo Digital Library.
 
 ## Objective
 
