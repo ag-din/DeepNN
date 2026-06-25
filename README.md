@@ -4,7 +4,7 @@
 
 > Comparative study of the effectiveness and efficiency of convolutional (CNN)
 > vs. fully connected / dense (FC) neural networks on multi-class image
-> classification. Original code from my Physics thesis (5-year integrated
+> classification. Original code from my Physics thesis (5-year combined
 > BSc+MSc program), 2018.
 
 > ⚠️ **Archived / historical repository.** This is the original experimental
