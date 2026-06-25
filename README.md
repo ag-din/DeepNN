@@ -51,8 +51,21 @@ See [ARCHITECTURES.md](./ARCHITECTURES.md) for the full per-layer specification.
 - **Optimizer:** Adam (Keras defaults: lr=0.001, β1=0.9, β2=0.999, ε=1e-8),
   chosen partly because its adaptive learning rate removes the need to tune it.
 - **Hyperparameter search:** randomized search + 10-fold cross-validation
-  (Scikit-learn `RandomizedSearchCV`) over batch size and number of epochs,
-  explored on a logarithmic scale.
+  (Scikit-learn `RandomizedSearchCV`). Only **two** hyperparameters were tuned —
+  batch size and number of epochs — explored on a logarithmic scale over the
+  ranges {30, 100, 500, 1,000, 3,000, 5,000, 8,000} and {10, 30, 100, 300, 800,
+  1,000, 1,500} respectively. The learning rate did not need tuning because Adam
+  adapts it automatically. For each hyperparameter configuration and a given network
+   architecture, **k-fold cross-validation (CV)** was applied. The training set (50,000 images)
+  was partitioned into *k* equal-sized subsets: one subset served as validation
+  data and the remaining *k*−1 as training data. The network was then trained and
+  evaluated, repeating this process for *k* iterations so that each subset served
+  as the validation set once. Thus, a network with a given hyperparameter
+  configuration was trained and evaluated *k* times, yielding *k* performance
+  measures that were averaged arithmetically. The number of folds was set to
+  **k = 10**, an optimal value according to Refaeilzadeh et al. (2008). Each
+  hyperparameter configuration was sampled at random from the hyperparameter space
+  via random search.
 - **Regularization:** Dropout (p=0.5) and Batch Normalization.
 
 ## Requirements
