@@ -69,8 +69,8 @@ Written using the libraries of the time and trained on an **Nvidia GeForce
 GTX 970** GPU:
 
 - Python
-- [Keras (Chollet, 2015)](https://keras.io/)
-- [Scikit-learn (Pedregosa et al., 2011)](https://scikit-learn.org/)
+- [Keras](https://keras.io/)
+- [Scikit-learn](https://scikit-learn.org/)
 
 > Current Keras/TensorFlow stacks are **not** compatible without changes. To
 > reproduce the original results, use library versions from May 2018.
