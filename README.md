@@ -66,7 +66,9 @@ See [ARCHITECTURES.md](./ARCHITECTURES.md) for the full per-layer specification.
   **k = 10**, an optimal value according to Refaeilzadeh et al. (2008). Each
   hyperparameter configuration was sampled at random from the hyperparameter space
   via random search.
-- **Regularization:** Dropout (p=0.5) and Batch Normalization.
+- **Regularization:** Dropout (p=0.5) and Batch Normalization. According to Srivastava et
+  al. (2014), the value of 0.5 for dropout appears to be close to optimal for a wide range of
+  networks and tasks.
 
 ## Requirements
 
