@@ -38,15 +38,8 @@ into 50,000 training and 10,000 test images.
 
 ## Architectures
 
-**Dense (FC) — 11 networks (RD01–RD11):** input vector of 3,072 values, 2–5
-hidden layers with varying widths (up to 5k units) and activations (sigmoid,
-ReLU, tanh, linear, PReLU, Leaky ReLU, Thresholded ReLU), softmax output over
-10 classes. Several based on Ba & Caruana (2013) and Lin et al. (2015).
-
-**Convolutional (CNN) — 11 networks (RC01–RC11):** input tensor 32×32×3,
-convolutional + pooling stacks (max / average / global average pooling), some
-with locally-connected or fully-connected layers, softmax output over 10
-classes. Several based on Zeiler & Fergus (2013) and Springenberg et al. (2014).
+22 networks in total — 11 dense (RD01–RD11) and 11 convolutional (RC01–RC11).
+See [ARCHITECTURES.md](./ARCHITECTURES.md) for the full per-layer specification.
 
 ## Methodology
 
