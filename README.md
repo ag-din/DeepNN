@@ -108,3 +108,11 @@ when designing a network for a given task.
 ## Status
 
 Archived for historical and reference purposes. Not maintained.
+
+## References
+
+Srivastava, N., Hinton, G., Frizhevsky, A., Sutskever, I. y Salakhutdinov, R. (2014). 
+Dropout: A Simple Way to Prevent Neural Networks from Overfitting. Journal of Machine
+Learning Research, 15 (1), 1929-1958.
+
+
