@@ -32,10 +32,9 @@ compared to CNNs on a multi-class image classification task. The work involved:
 
 ## Dataset
 
-**CIFAR-10** — 60,000 low-resolution color images (32×32 RGB) across 10 classes
+**[CIFAR-10](https://cave.cs.toronto.edu/kriz/cifar.html)** — 60,000 low-resolution color images (32×32 RGB) across 10 classes
 (airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck), split
-into 50,000 training and 10,000 test images. The Python version of the dataset
-was used.
+into 50,000 training and 10,000 test images.
 
 ## Architectures
 
