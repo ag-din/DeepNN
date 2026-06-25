@@ -1,4 +1,4 @@
-# CNN vs Fully Connected Networks — Effectiveness & Efficiency on CIFAR-10
+# CNN vs FC Networks — Effectiveness & Efficiency on CIFAR-10
 
 
 
