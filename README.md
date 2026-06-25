@@ -13,7 +13,8 @@
 
 ## Context
 
-Experiments from my Physics thesis at National University of Cuyo (2018). Deep neural
+Experiments from my Physics thesis ("Learning and Analysis of Deep Artificial Neural Networks")
+at National University of Cuyo (2018). Deep neural
 networks achieve strong performance on AI tasks, but training them carries a
 high computational cost, and they are designed in many shapes and sizes
 depending on the application. This work studies that trade-off for two
