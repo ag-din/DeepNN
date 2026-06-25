@@ -89,7 +89,16 @@ GTX 970** GPU:
 
 ## Results
 
-...
+Across all 22 networks, CNNs were consistently more **effective** but less
+**efficient** than dense networks. Convolutional models reached 68–81% test
+accuracy (vs. 29–59% for dense networks), while dense networks trained
+substantially faster — most in under 25 minutes, against well over an hour for
+several CNNs. This reflects a clear effectiveness–efficiency trade-off. CNNs buy
+higher accuracy at the cost of longer training, thanks to having many more
+hidden units but far fewer parameters than dense networks.
+
+See **[RESULTS.md](./RESULTS.md)** for the results — per-network accuracy,
+training time, parameter counts, and all figures from the thesis.
 
 ## Status
 
