@@ -70,6 +70,10 @@ See [ARCHITECTURES.md](./ARCHITECTURES.md) for the full per-layer specification.
 - **Regularization:** Dropout (p=0.5) and Batch Normalization. According to Srivastava et
   al. (2014), the value of 0.5 for dropout appears to be close to optimal for a wide range of
   networks and tasks.
+- **Metrics:** For each network (trained with its best hyperparameter configuration), the
+  following were measured: classification accuracy (effectiveness), training time
+  (efficiency), number of hidden units, number of hidden layers, and number of
+  parameters.
 
 ## Requirements
 
