@@ -20,13 +20,11 @@ sits in the ~68–81% range, while dense networks fall in the ~29–59% range.
 networks, indicating a stronger ability to capture abstract patterns and
 generalize.
 
-![Classification accuracy per network, with human performance as reference](figures/fig_5.1_accuracy_ranking.png)
-*Figure 5.1 — Classification accuracy (%) of dense (RD) and convolutional (RC)
-networks. Average human performance (94%) is shown for reference.*
+<img src="figures/figure_5-1.png" alt="Classification accuracy per network" width="60%">
+*Figure 5.1 — Classification accuracy (%) of dense (RD) and convolutional (RC) networks. Average human performance (94%) is shown for reference.*
 
-![Box plot of accuracy by network type](figures/fig_5.2_accuracy_boxplot.png)
-*Figure 5.2 — Distribution of classification accuracy for dense (RD) vs.
-convolutional (RC) networks.*
+<img src="figures/figure_5-2.png" alt="Box plot of accuracy by network type" width="60%">
+*Figure 5.2 — Distribution of classification accuracy for dense (RD) vs. convolutional (RC) networks.*
 
 The single exception is **RC03**, which failed to train under this setup
 (10.00%, i.e. chance level), despite reaching ~90% in the original paper
