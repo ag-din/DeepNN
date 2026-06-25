@@ -82,12 +82,6 @@ GTX 970** GPU:
 > Current Keras/TensorFlow stacks are **not** compatible without changes. To
 > reproduce the original results, use library versions from May 2018.
 
-## How to run
-
-```bash
-[command to launch the experiments]
-```
-
 ## Results
 
 Results were partially consistent with the proposed hypotheses:
