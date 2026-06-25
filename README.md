@@ -85,26 +85,7 @@ GTX 970** GPU:
 
 ## Results
 
-Results were partially consistent with the proposed hypotheses:
-
-- **Effectiveness:** 91% of the trained CNNs were at least **9.11% more
-  effective** than the FC networks — a stronger ability to learn complex
-  patterns, attributed to CNNs having more hidden units, local connectivity, and
-  parameter sharing within convolutional layers.
-- **Efficiency:** 82% of the trained FC networks were at least **6.4 min more
-  efficient** (faster to train) than the CNNs — attributed mainly to the number
-  and complexity of operations performed, and to a lesser extent to the number
-  of parameters learned.
-
-| Architecture | Effectiveness (accuracy) | Efficiency (training time) |
-|--------------|--------------------------|----------------------------|
-| CNN          | Higher (≥ +9.11% in 91% of cases) | Slower |
-| FC (dense)   | Lower                    | Faster (≥ 6.4 min in 82% of cases) |
-
-These results help characterize how structural variations in deep networks
-affect their performance — useful for balancing effectiveness and efficiency
-when designing a network for a given task.
-
+...
 
 ## Status
 
