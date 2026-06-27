@@ -14,7 +14,7 @@ None of the 22 networks reached this level — the best was at least
 
 ---
 
-## Effectiveness (classification accuracy)
+## 1. Effectiveness (classification accuracy)
 
 CNNs were clearly more effective than dense networks. The convolutional group
 sits in the ~68–81% range, while dense networks fall in the ~29–59% range.
@@ -35,69 +35,6 @@ generalize. See figures 5.1 and 5.2.
 The single exception is **RC03**, which failed to train under this setup
 (10.00%, i.e. chance level), despite reaching ~90% in the original paper
 (Springenberg et al., 2014).
-
----
-
-## Efficiency (training time)
-
-Dense networks were considerably faster to train. Most finished in under 25
-minutes, while several CNNs took well over an hour. **9 of the 11 dense
-networks** were at least **6.4 min more efficient** than the CNNs. See
-figures 5.5 and 5.6.
-
-<figure>
-  <img src="figures/figure_5-5.png" alt="Training time per network" width="55%">
-  <figcaption><em>Figure 5.5 — Training time (minutes) for dense (RD) and convolutional (RC) networks.</em></figcaption>
-</figure>
-
-<figure>
-  <img src="figures/figure_5-6.png" alt="Box plot of training time by network type" width="55%">
-  <figcaption><em>Figure 5.6 — Distribution of training time for dense (RD) vs. convolutional (RC) networks.</em></figcaption>
-</figure>
-
-## Capacity: parameters and hidden units
-
-A key structural difference explains the trade-off: CNNs have **far more hidden
-units** but **far fewer parameters** than dense networks, thanks to local
-connectivity and parameter sharing.
-
-### Number of parameters (millions)
-
-**82%** of the CNNs had fewer parameters to learn than the dense networks. See
-figures 5.7 and 5.8.
-
-<figure>
-  <img src="figures/figure_5-7.png" alt="Number of parameters per network" width="55%">
-  <figcaption><em>Figure 5.7 — Number of parameters (millions) for dense (RD) and convolutional (RC) networks.</em></figcaption>
-</figure>
-
-<figure>
-  <img src="figures/figure_5-8.png" alt="Box plot of parameters by network type" width="55%">
-  <figcaption><em>Figure 5.8 — Distribution of the number of parameters (millions) for dense (RD) vs. convolutional (RC) networks.</em></figcaption>
-</figure>
-
-### Number of hidden units (thousands)
-
-**All** CNNs had more hidden units than the dense networks. See figures 5.9 and 5.10.
-
-<figure>
-  <img src="figures/figure_5-9.png" alt="Number of hidden units per network" width="55%">
-  <figcaption><em>Figure 5.9 — Number of hidden units (thousands) for dense (RD) and convolutional (RC) networks.</em></figcaption>
-</figure>
-
-<figure>
-  <img src="figures/figure_5-10.png" alt="Box plot of hidden units by network type" width="55%">
-  <figcaption><em>Figure 5.10 — Distribution of the number of hidden units (thousands) for dense (RD) vs. convolutional (RC) networks.</em></figcaption>
-</figure>
-
-Figure 5.11 shows the relationship between the number of hidden units and the number of parameters.
-
-<figure>
-  <img src="figures/figure_5-11.png" alt="Box plot of hidden-units-to-parameters ratio" width="55%">
-  <figcaption><em>Figure 5.11 — Ratio of hidden units to parameters for dense (RD) vs. convolutional (RC) networks. CNNs pack far more units per parameter.</em></figcaption>
-</figure>
-
-## Reproduction of published architectures
 
 Five of the 22 networks were based on previously published architectures (Figure 5.3). Their
 accuracies compared to the reported values as follows:
@@ -123,7 +60,67 @@ the differences may be due to variations in the training protocols.
 
 ---
 
-## Correlations between performance and structure
+## 2. Efficiency (training time)
+
+Dense networks were considerably faster to train. Most finished in under 25
+minutes, while several CNNs took well over an hour. **9 of the 11 dense
+networks** were at least **6.4 min more efficient** than the CNNs. See
+figures 5.5 and 5.6.
+
+<figure>
+  <img src="figures/figure_5-5.png" alt="Training time per network" width="55%">
+  <figcaption><em>Figure 5.5 — Training time (minutes) for dense (RD) and convolutional (RC) networks.</em></figcaption>
+</figure>
+
+<figure>
+  <img src="figures/figure_5-6.png" alt="Box plot of training time by network type" width="55%">
+  <figcaption><em>Figure 5.6 — Distribution of training time for dense (RD) vs. convolutional (RC) networks.</em></figcaption>
+</figure>
+
+## 3. Capacity: parameters and hidden units
+
+A key structural difference explains the trade-off: CNNs have **far more hidden
+units** but **far fewer parameters** than dense networks, thanks to local
+connectivity and parameter sharing.
+
+### 3.1. Number of parameters (millions)
+
+**82%** of the CNNs had fewer parameters to learn than the dense networks. See
+figures 5.7 and 5.8.
+
+<figure>
+  <img src="figures/figure_5-7.png" alt="Number of parameters per network" width="55%">
+  <figcaption><em>Figure 5.7 — Number of parameters (millions) for dense (RD) and convolutional (RC) networks.</em></figcaption>
+</figure>
+
+<figure>
+  <img src="figures/figure_5-8.png" alt="Box plot of parameters by network type" width="55%">
+  <figcaption><em>Figure 5.8 — Distribution of the number of parameters (millions) for dense (RD) vs. convolutional (RC) networks.</em></figcaption>
+</figure>
+
+### 3.2. Number of hidden units (thousands)
+
+**All** CNNs had more hidden units than the dense networks. See figures 5.9 and 5.10.
+
+<figure>
+  <img src="figures/figure_5-9.png" alt="Number of hidden units per network" width="55%">
+  <figcaption><em>Figure 5.9 — Number of hidden units (thousands) for dense (RD) and convolutional (RC) networks.</em></figcaption>
+</figure>
+
+<figure>
+  <img src="figures/figure_5-10.png" alt="Box plot of hidden units by network type" width="55%">
+  <figcaption><em>Figure 5.10 — Distribution of the number of hidden units (thousands) for dense (RD) vs. convolutional (RC) networks.</em></figcaption>
+</figure>
+
+Figure 5.11 shows the relationship between the number of hidden units and the number of parameters.
+
+<figure>
+  <img src="figures/figure_5-11.png" alt="Box plot of hidden-units-to-parameters ratio" width="55%">
+  <figcaption><em>Figure 5.11 — Ratio of hidden units to parameters for dense (RD) vs. convolutional (RC) networks. CNNs pack far more units per parameter.</em></figcaption>
+</figure>
+
+
+## 4. Correlations between performance and structure
 
 Within each model type the correlations were unclear: networks with similar
 parameter or unit counts often reached different accuracies, and vice versa. 
@@ -162,7 +159,7 @@ however, some general trends emerged:
 
 ---
 
-## Summary
+## 5. Summary
 
 - CNNs were consistently **more effective** but **less efficient** than dense
   networks — a clear effectiveness–efficiency trade-off.
