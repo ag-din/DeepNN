@@ -21,10 +21,10 @@ networks, indicating a stronger ability to capture abstract patterns and
 generalize.
 
 <img src="figures/figure_5-1.png" alt="Classification accuracy per network" width="60%">
-*Figure 5.1 — Classification accuracy (%) of dense (RD) and convolutional (RC) networks. Average human performance (94%) is shown for reference.*
+Figure 5.1 — Classification accuracy (%) of dense (RD) and convolutional (RC) networks. Average human performance (94%) is shown for reference.
 
 <img src="figures/figure_5-2.png" alt="Box plot of accuracy by network type" width="60%">
-*Figure 5.2 — Distribution of classification accuracy for dense (RD) vs. convolutional (RC) networks.*
+Figure 5.2 — Distribution of classification accuracy for dense (RD) vs. convolutional (RC) networks.
 
 The single exception is **RC03**, which failed to train under this setup
 (10.00%, i.e. chance level), despite reaching ~90% in the original paper
@@ -54,7 +54,7 @@ The single exception is **RC03**, which failed to train under this setup
 | 19 | RD03 | 47.16 | FC |
 | 20 | RD04 | 45.04 | FC |
 | 21 | RD09 | 29.25 | FC |
-| 22 | RC03 | 10.00 | CNN (failed to train) |
+| 22 | RC03 | 10.00 | CNN |
 
 - Most effective overall: **RC02** (80.70%).
 - Most effective dense network: **RD08** (58.84%).
@@ -67,13 +67,13 @@ Dense networks were considerably faster to train. Most finished in under 25
 minutes, while several CNNs took well over an hour. **9 of the 11 dense
 networks** were at least **6.4 min more efficient** than the CNNs.
 
-![Training time per network](figures/fig_5.5_training_time.png)
-*Figure 5.5 — Training time (minutes) for dense (RD) and convolutional (RC)
-networks.*
+<img src="figures/figure_5-5.png" alt="Training time per network" width="60%">
+Figure 5.5 — Training time (minutes) for dense (RD) and convolutional (RC)
+networks.
 
-![Box plot of training time by network type](figures/fig_5.6_training_time_boxplot.png)
-*Figure 5.6 — Distribution of training time for dense (RD) vs. convolutional
-(RC) networks.*
+<img src="figures/figure_5-6.png" alt="Box plot of training time by network type" width="60%">
+Figure 5.6 — Distribution of training time for dense (RD) vs. convolutional
+(RC) networks.
 
 | Network | Training time (min) | Type |
 |---------|---------------------|------|
@@ -116,13 +116,13 @@ connectivity and parameter sharing.
 
 ### Number of parameters (millions)
 
-![Number of parameters per network](figures/fig_5.7_parameters_bar.png)
-*Figure 5.7 — Number of parameters (millions) for dense (RD) and convolutional
-(RC) networks.*
+<img src="figures/figure_5-7.png" alt="Number of parameters per network" width="60%">
+Figure 5.7 — Number of parameters (millions) for dense (RD) and convolutional
+(RC) networks.
 
-![Box plot of parameters by network type](figures/fig_5.8_parameters_boxplot.png)
-*Figure 5.8 — Distribution of the number of parameters (millions) for dense (RD)
-vs. convolutional (RC) networks.*
+<img src="figures/figure_5-8.png" alt="Box plot of parameters by network type" width="60%">
+Figure 5.8 — Distribution of the number of parameters (millions) for dense (RD)
+vs. convolutional (RC) networks.
 
 | Network | Parameters (M) | Type |
 |---------|----------------|------|
@@ -151,17 +151,17 @@ vs. convolutional (RC) networks.*
 
 ### Number of hidden units (thousands)
 
-![Number of hidden units per network](figures/fig_5.9_hidden_units_bar.png)
-*Figure 5.9 — Number of hidden units (thousands) for dense (RD) and
-convolutional (RC) networks.*
+<img src="figures/figure_5-9.png" alt="Number of hidden units per network" width="60%">
+Figure 5.9 — Number of hidden units (thousands) for dense (RD) and
+convolutional (RC) networks.
 
-![Box plot of hidden units by network type](figures/fig_5.10_hidden_units_boxplot.png)
-*Figure 5.10 — Distribution of the number of hidden units (thousands) for dense
-(RD) vs. convolutional (RC) networks.*
+<img src="figures/figure_5-10.png" alt="Box plot of hidden units by network type" width="60%">
+Figure 5.10 — Distribution of the number of hidden units (thousands) for dense
+(RD) vs. convolutional (RC) networks.
 
-![Box plot of hidden-units-to-parameters ratio](figures/fig_5.11_units_params_ratio.png)
-*Figure 5.11 — Ratio of hidden units to parameters for dense (RD) vs.
-convolutional (RC) networks. CNNs pack far more units per parameter.*
+<img src="figures/figure_5-11.png" alt="Box plot of hidden-units-to-parameters ratio" width="60%">
+Figure 5.11 — Ratio of hidden units to parameters for dense (RD) vs.
+convolutional (RC) networks. CNNs pack far more units per parameter.
 
 | Network | Hidden units (k) | Type |
 |---------|------------------|------|
@@ -207,9 +207,9 @@ RD01 and RD02 improved on their published results, and RC02 closely matched.
 RC03 and RD03 underperformed — the training setup was not optimal for those two
 networks.
 
-![Accuracy in this study vs. the literature](figures/fig_5.3_literature_comparison.png)
-*Figure 5.3 — Comparison between the accuracies obtained in this study and those
-reported in the literature, for the five architectures taken from other works.*
+<img src="figures/figure_5-3.png" alt="Accuracy in this study vs. the literature" width="60%">
+Figure 5.3 — Comparison between the accuracies obtained in this study and those
+reported in the literature, for the five architectures taken from other works.
 
 ---
 
@@ -224,25 +224,25 @@ Across the full set of networks, however, some general trends emerged:
 - More parameters → lower efficiency (longer training).
 - More hidden units → lower efficiency (longer training).
 
-![Accuracy vs. training time](figures/fig_5.12_accuracy_vs_time.png)
-*Figure 5.12 — Correlation between classification accuracy (%) and training time
-(min) for dense (RD) and convolutional (RC) networks.*
+<img src="figures/figure_5-12.png" alt="Accuracy vs. training time" width="60%">
+Figure 5.12 — Correlation between classification accuracy (%) and training time
+(min) for dense (RD) and convolutional (RC) networks.
 
-![Accuracy vs. number of parameters](figures/fig_5.13_accuracy_vs_params.png)
-*Figure 5.13 — Correlation between accuracy (%) and number of parameters
-(millions). The x-axis is logarithmic.*
+<img src="figures/figure_5-13.png" alt="Accuracy vs. number of parameters" width="60%">
+Figure 5.13 — Correlation between accuracy (%) and number of parameters
+(millions). The x-axis is logarithmic.
 
-![Accuracy vs. number of hidden units](figures/fig_5.14_accuracy_vs_units.png)
-*Figure 5.14 — Correlation between accuracy (%) and number of hidden units
-(thousands). The x-axis is logarithmic.*
+<img src="figures/figure_5-14.png" alt="Accuracy vs. number of hidden units" width="60%">
+Figure 5.14 — Correlation between accuracy (%) and number of hidden units
+(thousands). The x-axis is logarithmic.
 
-![Training time vs. number of parameters](figures/fig_5.15_time_vs_params.png)
-*Figure 5.15 — Correlation between training time (min) and number of parameters
-(millions). The x-axis is logarithmic.*
+<img src="figures/figure_5-15.png" alt="Training time vs. number of parameters" width="60%">
+Figure 5.15 — Correlation between training time (min) and number of parameters
+(millions). The x-axis is logarithmic.
 
-![Training time vs. number of hidden units](figures/fig_5.16_time_vs_units.png)
-*Figure 5.16 — Correlation between training time (min) and number of hidden
-units (millions). The x-axis is logarithmic.*
+<img src="figures/figure_5-16.png" alt="Training time vs. number of hidden units" width="60%">
+Figure 5.16 — Correlation between training time (min) and number of hidden
+units (millions). The x-axis is logarithmic.
 
 ---
 
